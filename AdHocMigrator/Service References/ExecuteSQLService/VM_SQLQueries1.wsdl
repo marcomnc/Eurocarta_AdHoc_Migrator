@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:tns="http://www.virtuemart.net/VM_SQLQueries/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VM_SQLQueries" targetNamespace="http://www.virtuemart.net/VM_SQLQueries/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.virtuemart.net/VM_SQLQueries/" name="VM_SQLQueries" targetNamespace="http://www.virtuemart.net/VM_SQLQueries/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.virtuemart.net/VM_SQLQueries/">
       <xsd:element name="ExecuteSQLQueryResponse" type="tns:SQLResultArray" />
@@ -165,7 +165,7 @@
   </wsdl:binding>
   <wsdl:service name="VM_SQLQueries">
     <wsdl:port name="VM_SQLQueriesSOAP" binding="tns:VM_SQLQueriesSOAP">
-      <soap:address location="http://www.magazziniautomatici.it/administrator/components/com_vm_soa/services/VM_SQLQueriesService.php" />
+      <soap:address location="http://www.eurocarta.net/administrator/components/com_vm_soa/services/VM_SQLQueriesService.php" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

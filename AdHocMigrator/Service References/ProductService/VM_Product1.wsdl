@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:tns="http://www.virtuemart.net/VM_Product/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VM_Product" targetNamespace="http://www.virtuemart.net/VM_Product/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.virtuemart.net/VM_Product/" name="VM_Product" targetNamespace="http://www.virtuemart.net/VM_Product/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.virtuemart.net/VM_Product/">
       <xsd:element name="GetProductFromIdResponse" type="tns:Produit" />
@@ -1188,7 +1188,7 @@
   </wsdl:binding>
   <wsdl:service name="VM_Product">
     <wsdl:port name="VM_ProductSOAP" binding="tns:VM_ProductSOAP">
-      <soap:address location="http://www.magazziniautomatici.it/administrator/components/com_vm_soa/services/VM_ProductService.php" />
+      <soap:address location="http://www.eurocarta.net/administrator/components/com_vm_soa/services/VM_ProductService.php" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

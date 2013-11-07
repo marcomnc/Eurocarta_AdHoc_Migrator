@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:tns="http://www.virtuemart.net/VM_Users/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VM_Users" targetNamespace="http://www.virtuemart.net/VM_Users/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.virtuemart.net/VM_Users/" name="VM_Users" targetNamespace="http://www.virtuemart.net/VM_Users/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <xsd:schema targetNamespace="http://www.virtuemart.net/VM_Users/">
       <xsd:element name="GetUsersRequest" type="tns:GetUsersInput" />
@@ -1309,7 +1309,7 @@
   </wsdl:binding>
   <wsdl:service name="VM_Users">
     <wsdl:port name="VM_UsersSOAP" binding="tns:VM_UsersSOAP">
-      <soap:address location="http://www.magazziniautomatici.it/administrator/components/com_vm_soa/services/VM_UsersService.php" />
+      <soap:address location="http://www.eurocarta.net/administrator/components/com_vm_soa/services/VM_UsersService.php" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

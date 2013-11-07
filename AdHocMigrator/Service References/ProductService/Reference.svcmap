@@ -11,16 +11,17 @@
     <CollectionMappings />
     <GenerateSerializableTypes>true</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
     <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
     <ReferencedAssemblies />
     <ReferencedDataContractTypes />
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://www.magazziniautomatici.it/administrator/components/com_vm_soa/services/VM_ProductWSDL.php" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://www.eurocarta.net/administrator/components/com_vm_soa/services/VM_ProductWSDL.php" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="VM_Product.wsdl" MetadataType="Wsdl" ID="0497e5d3-a652-4d71-930f-544dd7e6e754" SourceId="1" SourceUrl="http://www.magazziniautomatici.it/administrator/components/com_vm_soa/services/VM_ProductWSDL.php" />
+    <MetadataFile FileName="VM_Product1.wsdl" MetadataType="Wsdl" ID="93ac4f69-2c20-44aa-8ea1-8ae84dbbf7f7" SourceId="1" SourceUrl="http://www.eurocarta.net/administrator/components/com_vm_soa/services/VM_ProductWSDL.php" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -67,17 +67,21 @@ namespace AdHocMigrator.Model
         /// <returns>cliente corrispondente</returns>
         public User GetUser(string username)
         {
+            this.Trace(string.Format("Tento di recupeare l'utente {0}", username));
             var response = _users.GetUserFromEmailOrUsername(new GetUserFromEmailOrUsernameRequest { loginInfo = _login, username = username });
             if (response == null)
             {
+                this.Trace("Utente non recuperato: Response == null");
                 return null;
             }
 
             if (response.User == null)
             {
+                this.Trace("Utente non recuperato: Response.user == null");
                 return null;
             }
 
+            this.Trace(string.Format("Recupearti {0} utenti", response.User.Length));
             return response.User.Length == 0 ? null : response.User.Where(u => u.login == username).FirstOrDefault();
         }
 
@@ -149,8 +153,9 @@ namespace AdHocMigrator.Model
                                         loginInfo = _login,
                                         User = user
                                     };
+                                    this.Trace(string.Format("Mi appresto ad aggiungere l'utente {0}-{1}", user.login, user.email));
                                     _users.AddUser(new AddUserRequest(userInput));
-
+                                    this.Trace("Aggiunto l'utente");
                                     // Purtroppo non salva la ragione sociale
                                     _remoteSql.Execute(string.Format("UPDATE jos_vm_user_info SET company='{0}' WHERE user_id = (SELECT id FROM jos_users WHERE username = '{1}');", Escape(ragioneSociale), Escape(codice)));
                                     this.Trace(string.Format("Inserito nuovo utente con username: {0}", codice));
